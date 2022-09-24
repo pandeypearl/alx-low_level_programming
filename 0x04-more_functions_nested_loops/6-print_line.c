@@ -2,7 +2,7 @@
 
 /**
 *print_line - function that draws a straight line
-*@n: number of time character _ should be printed
+*@n: is the integer for the paramaters of my function
 *Return: 0
 */
 
