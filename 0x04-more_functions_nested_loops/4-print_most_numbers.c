@@ -6,18 +6,18 @@
 *Return: 0
 */
 
-int print_most_numbers(void)
+void print_most_numbers(void)
 {
-	char c;
+	char c = '0';
 
-	for (c = '0'; c <= '9'; c++)
+	while (c <= '9')
 	{
 		if (c != '2' && c != '4')
 		{
 			_putchar(c);
 		}
+	c++;
 	}
 	_putchar('\n');
-	return (0);
 }
 
