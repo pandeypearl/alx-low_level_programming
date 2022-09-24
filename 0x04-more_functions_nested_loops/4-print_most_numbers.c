@@ -6,15 +6,15 @@
 *Return: 0
 */
 
-void print_most_numbers(void)
+int print_most_numbers(void)
 {
-	char ch;
+	char c;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		if (ch != '2' && ch != '4')
+		if (c != '2' && c != '4')
 		{
-			_putchar(ch);
+			_putchar(c);
 		}
 	}
 	_putchar('\n');
