@@ -14,10 +14,10 @@ int print_most_numbers(void)
 	{
 		if (ch != '2' && ch != '4')
 		{
-			putchar(ch);
+			_putchar(ch);
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
 
