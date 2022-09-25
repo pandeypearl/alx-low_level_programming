@@ -6,7 +6,7 @@
 /**
  *main - main function
  *
- * Return: 1
+ *Return: 1
  */
 
 int main(void)
@@ -20,5 +20,5 @@ int main(void)
 	strcpy(string, str2);
 	write(2, string, sizeof(string));
 
-	return (1);
+return (1);
 }
