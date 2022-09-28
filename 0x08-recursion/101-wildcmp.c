@@ -103,6 +103,7 @@ int find_after_sc(char **s1, char *as1, char s2)
 		*s1 = as1;
 		return (1);
 	}
+
 	if (find_after_sc(s1, as1 + 1, s2) == 0)
 		return (0);
 
