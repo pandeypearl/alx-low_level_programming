@@ -41,7 +41,6 @@ int full_compare(char *s1, char *s2, char *last_sc, char *last_s1_sc)
 	{
 		if (*s1 == '\0')
 			return (1);
-
 		return (1 * full_compare(s1 + 1, s2 + 1, last_sc, last_s1_sc));
 	}
 
@@ -59,6 +58,7 @@ int full_compare(char *s1, char *s2, char *last_sc, char *last_s1_sc)
 		full_compare(s1, s2, last_sc, last_s1_sc);
 		return (1);
 	}
+	return (0);
 }
 
 /**
