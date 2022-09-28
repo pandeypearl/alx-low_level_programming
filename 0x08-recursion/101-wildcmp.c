@@ -1,7 +1,7 @@
 #include "main.h"
 
 int bandersnatch(char *s1, char *s2);
-int *move(char *s2);
+char *move(char *s2);
 
 /**
  * wildcmp - compares two strings recursively,
@@ -56,7 +56,7 @@ int wildcmp(char *s1, char *s2)
 	 */
 	if (*s2 == '*')
 	{
-		s2 = *move(s2);
+		s2 = move(s2);
 		if (*s2 == '\0')
 			return (1);
 		if (*s1 == *s2)
