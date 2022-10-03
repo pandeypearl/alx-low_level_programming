@@ -37,6 +37,16 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 
+	if (s2)
+	{
+		while (i < (len1 + len2))
+		{
+			s3[i] = s2[j];
+			i++;
+			j++;
+		}
+	}
+
 	s3[i] = '\0';
 
 	return (s3);
