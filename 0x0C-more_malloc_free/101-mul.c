@@ -41,10 +41,10 @@ int _strlen(char *s)
 }
 
 /**
- * error - handles erros for main
+ * errors - handles erros for main
  */
 
-void error(void)
+void errors(void)
 {
 	printf("Error\n");
 	exit(98);
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-		error();
+		errors();
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
