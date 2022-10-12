@@ -2,12 +2,10 @@
 
 /**
  * int_index - searches for an integer
- * @array: array to search
+ * @array: array to iterate
  * @size: size of array
- * @cmp: pointer to the comparing function
- * Return: index of the first element in which
- * the cmp function does not return 0
- * or -1 if no match is found or size is negative
+ * @cmp: pointer to function that compares values
+ * Return: the index of the first element for which the cmp is != 0
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
