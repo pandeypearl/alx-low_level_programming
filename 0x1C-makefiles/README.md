@@ -251,3 +251,35 @@ guillaume@ubuntu:~/0x1C$ ./5-main.py
 guillaume@ubuntu:~/0x1C$
 </code></pre>
 
+## Advanced Tasks
+
+### 6. make -f 100-Makefile
+Requirements:
+<ul>
+<li>name of the executable: school</li>
+<li>rules: all, clean, fclean, oclean, re
+<ul><li>all: builds your executable</li>
+<li>clean: deletes all Emacs and Vim temporary files along with the executable</li>
+<li>oclean: deletes the object files</li>
+<li>fclean: deletes all Emacs and Vim temporary files, the executable, and the object files</li>
+<li>re: forces recompilation of all source files</li></ul></li>
+<li>variables: CC, SRC, OBJ, NAME, RM, CFLAGS
+<ul><li>CC: the compiler to be used</li>
+<li>SRC: the .c files</li>
+<li>OBJ: the .o files</li>
+<li>NAME: the name of the executable</li>
+<li>RM: the program to delete files</li>
+<li>CFLAGS: your favorite compiler flags: -Wall -Werror -Wextra -pedantic</li></ul></li>
+<li>The all rule should recompile only the updated source files</li>
+<li>The clean, oclean, fclean, re rules should never fail</li>
+<li>You are not allowed to have a list of all the .o files</li>
+<li>You have to use $(RM) for the cleaning up rules, but you are not allowed to set the RM variable</li>
+<li>You are not allowed to use the string $(CC) more than once in your Makefile</li>
+<li>You are only allowed to use the string $(RM) twice in your Makefile</li>
+<li>You are not allowed to use the string $(CFLAGS) (but the compiler should still use the flags you set in this variable)</li>
+<li>You are not allowed to have an $(OBJ) rule</li>
+<li>You are not allowed to use the %.o: %.c rule</li>
+<li>Your Makefile should work even if there is a file in the folder that has the same name as one of your rule</li>
+<li>Your Makefile should not compile if the header file m.h is missing</li>
+</ul>
+
