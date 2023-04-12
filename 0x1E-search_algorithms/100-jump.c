@@ -3,7 +3,7 @@
 
 /**
  * jump_search - function that searches for a value
- * in sorted array of integers using junmp search algorithm
+ * in sorted array of integers using jump search algorithm
  * @array: array
  * @size: size of array
  * @value: value to search for
@@ -24,7 +24,7 @@ int jump_search(int *array, size_t size, int value)
 			|| (value == array[index + jump]))
 			|| (value > array[index] && value < array[index + jump]))
 		{
-			printf("Value found between indexes [%ld] and [%ld}\n",
+			printf("Value found between indexes [%ld] and [%ld]\n",
 					index, index + jump);
 			for (j = index; j < size && j <= index + jump; j++)
 			{
