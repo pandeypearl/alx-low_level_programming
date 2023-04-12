@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * bin_search - makes  binary search on givern array
+ * bin_search - makes binary search on given array
  * @array: the array
  * @first: first index
  * @last: last index
@@ -50,7 +50,7 @@ int exponential_search(int *array, size_t size, int value)
 	if (array[0] == value)
 		return (0);
 	for (i = 1; i < size && array[i] <= value; i *= 2)
-		printf("Value checked array[%ld} = [%d]\n", i, array[i]);
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 	first = i / 2;
 	last = i;
 	if (i >= size)
