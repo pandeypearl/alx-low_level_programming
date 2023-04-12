@@ -2,8 +2,8 @@
 #include <math.h>
 
 /**
- * jump_list -  function searches for value
- * in sorted singly linked list of integersusing Jump search algorithm
+ * jump_list - function searches for value
+ * in sorted singly linked list of integers using Jump search algorithm
  * @list: the head
  * @size: size of linked list
  * @value: value to search for
@@ -30,7 +30,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		{
 			tmp = tmp->next;
 		}
-		printf("Value checked at index [%ld} = [%d]\n", tmp->index, tmp->n);
+		printf("Value checked at index [%ld] = [%d]\n", tmp->index, tmp->n);
 		if (value <= tmp->n || index == size - 1)
 		{
 			printf("Value found between indexes [%ld] and [%ld]\n",
