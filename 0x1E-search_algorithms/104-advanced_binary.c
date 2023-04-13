@@ -28,7 +28,7 @@ int binary_recursive(int *array, size_t first, size_t last, int value)
 	if (array[first] == value && array[mid] == value)
 		return (first);
 	else if (array[mid] == value)
-		x = binary_recursive(array, first, mid, value);
+		x = (binary_recursive(array, first, mid, value));
 	else if (array[mid] > value)
 		x = (binary_recursive(array, first, mid - 1, value));
 	else if (array[mid] < value)
